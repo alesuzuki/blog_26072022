@@ -26,8 +26,12 @@
                     </div>
                 </header>
                 <p class="body"> {{ post.body }} </p>
-
+                
             </article>
+
+            {% if not loop.last %}
+                <hr>
+            {% endif %}
         {% endfor %}
 
 
